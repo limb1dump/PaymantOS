@@ -1,0 +1,139 @@
+.staff {
+
+    &__title {
+        margin-top: 142px;
+        font-size: 36px;
+        line-height: 44px;
+        color: $blackTextColor;
+        @include fontWeight(700);
+        margin-bottom: 15px;
+
+        @media (max-width: $breakepoint1200) {
+            text-align: center;
+        }
+
+        @media (max-width: $breakepoint992) {
+            margin-top: 100px;
+        }
+
+        @media (max-width: $breakepoint768) {
+            margin-top: 60px;
+        }
+
+        @media (max-width: $breakepoint480) {
+            margin-top: 40px;
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    &__text {
+        letter-spacing: 0.1px;
+        font-size: 14px;
+        line-height: 14px;
+        color: $greyTextColor;
+        @include fontWeight(400);
+        margin-bottom: 45px;
+
+        @media (max-width: $breakepoint1200) {
+            text-align: center;
+        }
+
+
+        @media (max-width: $breakepoint480) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__client-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        margin-bottom: 152px;
+
+        @media (max-width: $breakepoint1200) {
+            row-gap: 20px;
+        }
+
+        @media (max-width: $breakepoint992) {
+            margin-bottom: 110px;
+        }
+
+        @media (max-width: $breakepoint768) {
+            margin-bottom: 80px;
+        }
+    }
+
+
+    &__row {
+        display: flex;
+        gap: 20px;
+
+        @media (max-width: $breakepoint1200) {
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+        }
+    }
+
+    &__item {
+        max-width: 255px;
+        max-height: 217px;
+        padding: 20px 20px 19px 20px;
+        background: $greyBgColor;
+        border-radius: 4px;
+
+        &_shadow-bg {
+            background: $whiteTextColor;
+            box-shadow: 0px 4px 144px rgba(0, 0, 0, 0.08);
+        }
+
+        @media (max-width: $breakepoint1200) {
+            max-width: 346px;
+            max-height: 352px;
+        }
+
+        @media (max-width: $breakepoint768) {
+            max-width: 255px;
+            max-height: 217px;
+        }
+    }
+
+    &__img {
+        max-width: 215px;
+        margin-bottom: 15px;
+
+        @media (max-width: $breakepoint1200) {
+            max-width: 300px;
+        }
+
+        @media (max-width: $breakepoint768) {
+            max-width: 215px;
+        }
+    }
+
+    &__name {
+        color: $blackTextColor;
+        @include fontWeight(700);
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
+    &__social {
+        display: flex;
+        gap: 9px;
+    }
+
+    &__link {
+
+        &-twitter {
+            margin-top: 2px;
+        }
+
+        &-linkedin {
+            margin-top: -2px;
+        }
+    }
+}
